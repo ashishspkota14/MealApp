@@ -2,8 +2,8 @@
   "name": "mealapp",
   "private": true,
   "scripts": {
-    "dev": "cd backend && npm run dev",
-    "start": "cd backend && npm run start"
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
   },
   "devDependencies": {
     "drizzle-kit": "^0.31.1"
