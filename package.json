@@ -1,0 +1,16 @@
+{
+  "name": "mealapp",
+  "private": true,
+  "scripts": {
+    "dev": "cd backend && npm run dev",
+    "start": "cd backend && npm run start"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.1"
+  },
+  "dependencies": {
+    "@clerk/clerk-expo": "^2.19.6",
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.44.7"
+  }
+}
