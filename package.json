@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "nodemon src/server.js",
-    "start": "node src/server.js"
+    "start": "node server.js"
   },
   "devDependencies": {
     "drizzle-kit": "^0.31.1"
