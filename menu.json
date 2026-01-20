@@ -17,9 +17,9 @@
       "strIngredient8": "Cucumber",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "15 mins",
-      "servings": "1 bowl",
-      "price": "$12"
+      "cookTime": "8 mins",
+      "servings": "1 Plate",
+      "price": "$22"
     },
     {
       "id": "2",
@@ -38,8 +38,8 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "12 mins",
-      "servings": "1 bowl",
+      "cookTime": "8 mins",
+      "servings": "1 Bowl",
       "price": "$14"
     },
     {
@@ -59,7 +59,7 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "18 mins",
+      "cookTime": "9 mins",
       "servings": "1 bowl",
       "price": "$14"
     },
@@ -80,8 +80,8 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "8 mins",
-      "servings": "1 bowl",
+      "cookTime": "6 mins",
+      "servings": "1 Plate",
       "price": "$14"
     },
     {
@@ -122,8 +122,8 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "15 mins",
-      "servings": "1 order",
+      "cookTime": "8 mins",
+      "servings": "1 Order",
       "price": "$16"
     },
     {
@@ -143,7 +143,7 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "20 mins",
+      "cookTime": "15 mins",
       "servings": "6 wings / 12 wings / 18 wings",
       "price": "$14 / $25 / $35"
     },
@@ -164,8 +164,8 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "Varies",
-      "servings": "1 cup / 1 bowl",
+      "cookTime": "5 mins",
+      "servings": "1 Cup / 1 Bowl",
       "price": "Cup $8 / Bowl $14"
     },
     {
@@ -185,9 +185,9 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "12 mins",
-      "servings": "1 bowl",
-      "price": "$18"
+      "cookTime": "8 mins",
+      "servings": "1 Plate",
+      "price": "$16"
     },
     {
       "id": "10",
@@ -206,8 +206,8 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "10 mins",
-      "servings": "1 bowl",
+      "cookTime": "9 mins",
+      "servings": "1 Bowl",
       "price": "$17"
     },
     {
@@ -227,9 +227,9 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "18 mins",
-      "servings": "1 bowl",
-      "price": "$18"
+      "cookTime": "8 mins",
+      "servings": "1 Bowl",
+      "price": "$19"
     },
     {
       "id": "12",
@@ -248,8 +248,8 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "15 mins",
-      "servings": "1 bowl",
+      "cookTime": "8 mins",
+      "servings": "1 Bowl",
       "price": "$22"
     },
     {
@@ -269,8 +269,8 @@
       "strIngredient8": "Chipotle vinaigrette",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "12 mins",
-      "servings": "1 bowl",
+      "cookTime": "19 mins",
+      "servings": "1 Bowl",
       "price": "$19"
     },
     {
@@ -290,8 +290,8 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "15 mins",
-      "servings": "1 bowl",
+      "cookTime": "10 mins",
+      "servings": "1 Bowl",
       "price": "$20"
     },
     {
@@ -311,8 +311,8 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "15 mins",
-      "servings": "1 burger",
+      "cookTime": "9 mins",
+      "servings": "1 Burger",
       "price": "$17"
     },
     {
@@ -332,8 +332,8 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "15 mins",
-      "servings": "1 burger",
+      "cookTime": "9 mins",
+      "servings": "1 Burger",
       "price": "$19"
     },
     {
@@ -353,8 +353,8 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "15 mins",
-      "servings": "1 burger",
+      "cookTime": "9 mins",
+      "servings": "1 Burger",
       "price": "$20"
     },
     {
@@ -374,8 +374,8 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "18 mins",
-      "servings": "1 sandwich",
+      "cookTime": "12 mins",
+      "servings": "1 Sandwich",
       "price": "$18"
     },
     {
@@ -395,8 +395,8 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "10 mins",
-      "servings": "1 sandwich",
+      "cookTime": "9 mins",
+      "servings": "1 Sandwich",
       "price": "$19"
     },
     {
@@ -416,8 +416,8 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "15 mins",
-      "servings": "1 sandwich",
+      "cookTime": "12 mins",
+      "servings": "1 Sandwich",
       "price": "$17"
     },
     {
@@ -437,8 +437,8 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "12 mins",
-      "servings": "3 tacos",
+      "cookTime": "9 mins",
+      "servings": "3 Tacos",
       "price": "$18"
     },
     {
@@ -458,8 +458,8 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "15 mins",
-      "servings": "3 tacos",
+      "cookTime": "9 mins",
+      "servings": "3 Tacos",
       "price": "$17"
     },
     {
@@ -479,8 +479,8 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "12 mins",
-      "servings": "3 tacos",
+      "cookTime": "9 mins",
+      "servings": "3 Tacos",
       "price": "$15"
     },
     {
@@ -500,8 +500,8 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "18 mins",
-      "servings": "1 flatbread",
+      "cookTime": "12 mins",
+      "servings": "1 Flatbread",
       "price": "$22"
     },
     {
@@ -521,8 +521,8 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "18 mins",
-      "servings": "1 flatbread",
+      "cookTime": "12 mins",
+      "servings": "1 Flatbread",
       "price": "$23"
     },
     {
@@ -542,8 +542,8 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "18 mins",
-      "servings": "1 flatbread",
+      "cookTime": "12 mins",
+      "servings": "1 Flatbread",
       "price": "$20"
     },
     {
@@ -563,8 +563,8 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "12 mins",
-      "servings": "1 burger",
+      "cookTime": "9 mins",
+      "servings": "1 Burger",
       "price": "$12"
     },
     {
@@ -585,7 +585,7 @@
       "strIngredient9": "",
       "strIngredient10": "",
       "cookTime": "15 mins",
-      "servings": "1 order",
+      "servings": "1 Order",
       "price": "$11"
     },
     {
@@ -605,8 +605,8 @@
       "strIngredient8": "",
       "strIngredient9": "",
       "strIngredient10": "",
-      "cookTime": "10 mins",
-      "servings": "1 bowl",
+      "cookTime": "9 mins",
+      "servings": "1 Bowl",
       "price": "$10"
     }
   ],
