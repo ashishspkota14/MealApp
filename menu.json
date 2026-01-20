@@ -614,49 +614,41 @@
     {
       "idCategory": "1",
       "strCategory": "Starters",
-      "strCategoryThumb": "CLOUDINARY_IMAGE_HERE",
       "strCategoryDescription": "Delicious appetizers to start your meal"
     },
     {
       "idCategory": "2",
       "strCategory": "Soups",
-      "strCategoryThumb": "CLOUDINARY_IMAGE_HERE",
       "strCategoryDescription": "Fresh daily soup selection"
     },
     {
       "idCategory": "3",
       "strCategory": "Salads and Bowls",
-      "strCategoryThumb": "CLOUDINARY_IMAGE_HERE",
       "strCategoryDescription": "Fresh and healthy options"
     },
     {
       "idCategory": "4",
       "strCategory": "Pastas",
-      "strCategoryThumb": "CLOUDINARY_IMAGE_HERE",
       "strCategoryDescription": "Comforting pasta dishes"
     },
     {
       "idCategory": "5",
       "strCategory": "Burgers",
-      "strCategoryThumb": "CLOUDINARY_IMAGE_HERE",
       "strCategoryDescription": "Handcrafted burgers and sandwiches"
     },
     {
       "idCategory": "6",
       "strCategory": "Tacos",
-      "strCategoryThumb": "CLOUDINARY_IMAGE_HERE",
       "strCategoryDescription": "Authentic street-style tacos"
     },
     {
       "idCategory": "7",
       "strCategory": "Flatbreads",
-      "strCategoryThumb": "CLOUDINARY_IMAGE_HERE",
       "strCategoryDescription": "Artisan flatbreads with creative toppings"
     },
     {
       "idCategory": "8",
       "strCategory": "Kids Menu",
-      "strCategoryThumb": "CLOUDINARY_IMAGE_HERE",
       "strCategoryDescription": "Kid-friendly favorites"
     }
   ]
