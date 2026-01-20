@@ -614,41 +614,49 @@
     {
       "idCategory": "1",
       "strCategory": "Starters",
+      "strCategoryThumb": "https://res.cloudinary.com/dnwvktv8i/image/upload/v1768895843/Antlers_Dip_dqrjip.png",
       "strCategoryDescription": "Delicious appetizers to start your meal"
     },
     {
       "idCategory": "2",
       "strCategory": "Soups",
+      "strCategoryThumb": "https://res.cloudinary.com/dnwvktv8i/image/upload/v1768946087/soup_qfnpbd.jpg",
       "strCategoryDescription": "Fresh daily soup selection"
     },
     {
       "idCategory": "3",
       "strCategory": "Salads and Bowls",
+      "strCategoryThumb": "https://res.cloudinary.com/dnwvktv8i/image/upload/v1768946558/Vegan_Bowl_i5onvp.jpg",
       "strCategoryDescription": "Fresh and healthy options"
     },
     {
       "idCategory": "4",
       "strCategory": "Pastas",
+      "strCategoryThumb": "https://res.cloudinary.com/dnwvktv8i/image/upload/v1768946625/Chicken_Mac_and_cheese_e7dixw.jpg",
       "strCategoryDescription": "Comforting pasta dishes"
     },
     {
       "idCategory": "5",
       "strCategory": "Burgers",
+      "strCategoryThumb": "https://res.cloudinary.com/dnwvktv8i/image/upload/v1768946684/OKC_Burger_rk0mxv.png",
       "strCategoryDescription": "Handcrafted burgers and sandwiches"
     },
     {
       "idCategory": "6",
       "strCategory": "Tacos",
+      "strCategoryThumb": "https://res.cloudinary.com/dnwvktv8i/image/upload/v1768947312/fish_tacos_fxon9e.png",
       "strCategoryDescription": "Authentic street-style tacos"
     },
     {
       "idCategory": "7",
       "strCategory": "Flatbreads",
+      "strCategoryThumb": "https://res.cloudinary.com/dnwvktv8i/image/upload/v1768947440/harvest_harmony_flatbread_tvtce7.png",
       "strCategoryDescription": "Artisan flatbreads with creative toppings"
     },
     {
       "idCategory": "8",
       "strCategory": "Kids Menu",
+      "strCategoryThumb": "https://res.cloudinary.com/dnwvktv8i/image/upload/v1768947726/kids_tenders_and_fries_qvjner.avif",
       "strCategoryDescription": "Kid-friendly favorites"
     }
   ]
