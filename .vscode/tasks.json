@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Android Emulator",
+      "type": "shell",
+      "command": "emulator -avd Pixel_9_Pro -gpu swiftshader_indirect",
+      "isBackground": true,
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "^$"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^.*emulator.*",
+          "endsPattern": "^.*boot completed.*"
+        }
+      }
+    },
+    {
+      "label": "Wait for Emulator",
+      "type": "shell",
+      "command": "adb wait-for-device && sleep 10",
+      "windows": {
+        "command": "adb wait-for-device && timeout /t 10"
+      },
+      "dependsOn": ["Start Android Emulator"]
+    },
+    {
+      "label": "Start Expo",
+      "type": "shell",
+      "command": "npx expo start",
+      "dependsOn": ["Wait for Emulator"]
+    }
+  ]
+}

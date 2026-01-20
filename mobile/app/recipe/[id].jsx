@@ -294,14 +294,17 @@ const RecipeDetailScreen = () => {
               >
                 <Ionicons name="book" size={16} color={COLORS.white} />
               </LinearGradient>
-              <Text style={recipeDetailStyles.sectionTitle}>Instructions</Text>
+
+              <Text style={recipeDetailStyles.sectionTitle}>
+                Additional Data ? {/* Instructions */}
+              </Text>
               <View style={recipeDetailStyles.countBadge}>
                 <Text style={recipeDetailStyles.countText}>
                   {recipe.instructions.length}
                 </Text>
               </View>
             </View>
-
+            {/*
             <View style={recipeDetailStyles.instructionsContainer}>
               {recipe.instructions.map((instruction, index) => (
                 <View key={index} style={recipeDetailStyles.instructionCard}>
@@ -313,6 +316,7 @@ const RecipeDetailScreen = () => {
                       {index + 1}
                     </Text>
                   </LinearGradient>
+                 
                   <View style={recipeDetailStyles.instructionContent}>
                     <Text style={recipeDetailStyles.instructionText}>
                       {instruction}
@@ -331,10 +335,11 @@ const RecipeDetailScreen = () => {
                         />
                       </TouchableOpacity>
                     </View>
-                  </View>
+                  </View> 
                 </View>
               ))}
             </View>
+            */}
           </View>
 
           <TouchableOpacity
