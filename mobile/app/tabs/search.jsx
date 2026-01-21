@@ -16,7 +16,7 @@ import LoadingSpinner from "../../components/LoadingSpinner";
 
 const SearchScreen = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [recipes, setRecipes] = useState([]);
+  const [menuItems, setMenuItems] = useState([]);
   const [loading, setLoading] = useState(false);
   const [initialLoading, setInitialLoading] = useState(true);
 
@@ -32,7 +32,6 @@ const SearchScreen = () => {
     }
 
     // search by name first, then by ingredient if no results
-
     const nameResults = await MealAPI.searchMealsByName(query);
     let results = nameResults;
 
@@ -51,7 +50,7 @@ const SearchScreen = () => {
     const loadInitialData = async () => {
       try {
         const results = await performSearch("");
-        setRecipes(results);
+        setMenuItems(results);
       } catch (error) {
         console.error("Error loading initial data:", error);
       } finally {
@@ -70,10 +69,10 @@ const SearchScreen = () => {
 
       try {
         const results = await performSearch(debouncedSearchQuery);
-        setRecipes(results);
+        setMenuItems(results);
       } catch (error) {
         console.error("Error searching:", error);
-        setRecipes([]);
+        setMenuItems([]);
       } finally {
         setLoading(false);
       }
@@ -82,7 +81,7 @@ const SearchScreen = () => {
     handleSearch();
   }, [debouncedSearchQuery, initialLoading]);
 
-  if (initialLoading) return <LoadingSpinner message="Loading recipes..." />;
+  if (initialLoading) return <LoadingSpinner message="Loading menu..." />;
 
   return (
     <View style={searchStyles.container}>
@@ -96,7 +95,7 @@ const SearchScreen = () => {
           />
           <TextInput
             style={searchStyles.searchInput}
-            placeholder="Search recipes, ingredients..."
+            placeholder="Search menu items, ingredients..."
             placeholderTextColor={COLORS.textLight}
             value={searchQuery}
             onChangeText={setSearchQuery}
@@ -120,18 +119,20 @@ const SearchScreen = () => {
       <View style={searchStyles.resultsSection}>
         <View style={searchStyles.resultsHeader}>
           <Text style={searchStyles.resultsTitle}>
-            {searchQuery ? `Results for "${searchQuery}"` : "Popular Recipes"}
+            {searchQuery ? `Results for "${searchQuery}"` : "Popular Items"}
           </Text>
-          <Text style={searchStyles.resultsCount}>{recipes.length} found</Text>
+          <Text style={searchStyles.resultsCount}>
+            {menuItems.length} found
+          </Text>
         </View>
 
         {loading ? (
           <View style={searchStyles.loadingContainer}>
-            <LoadingSpinner message="Searching recipes..." size="small" />
+            <LoadingSpinner message="Searching menu..." size="small" />
           </View>
         ) : (
           <FlatList
-            data={recipes}
+            data={menuItems}
             renderItem={({ item }) => <RecipeCard recipe={item} />}
             keyExtractor={(item) => item.id.toString()}
             numColumns={2}
@@ -151,7 +152,7 @@ function NoResultsFound() {
   return (
     <View style={searchStyles.emptyState}>
       <Ionicons name="search-outline" size={64} color={COLORS.textLight} />
-      <Text style={searchStyles.emptyTitle}>No recipes found</Text>
+      <Text style={searchStyles.emptyTitle}>No items found</Text>
       <Text style={searchStyles.emptyDescription}>
         Try adjusting your search or try different keywords
       </Text>

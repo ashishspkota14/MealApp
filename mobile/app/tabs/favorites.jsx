@@ -30,8 +30,13 @@ const FavoritesScreen = () => {
 
         const favorites = await response.json();
 
-        // transform the data to match the RecipeCard component's expected format
-        const transformedFavorites = favorites.map((favorite) => ({
+        // Filter out favorites that don't exist in new menu
+        const validFavorites = favorites.filter((fav) => {
+          // Only keep favorites with valid recipe IDs (1-29 for your menu)
+          return fav.recipeId >= 1 && fav.recipeId <= 29;
+        });
+
+        const transformedFavorites = validFavorites.map((favorite) => ({
           ...favorite,
           id: favorite.recipeId,
         }));
@@ -55,7 +60,7 @@ const FavoritesScreen = () => {
     ]);
   };
 
-  if (loading) return <LoadingSpinner message="Loading your favorites..." />;
+  if (loading) return <LoadingSpinner message="Loading favorites..." />;
 
   return (
     <View style={favoritesStyles.container}>

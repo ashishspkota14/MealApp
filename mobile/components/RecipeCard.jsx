@@ -41,17 +41,19 @@ export default function RecipeCard({ recipe }) {
                 size={14}
                 color={COLORS.textLight}
               />
-              <Text style={recipeCardStyles.timeText}>{recipe.cookTime}</Text>
+              <Text style={recipeCardStyles.timeText} numberOfLines={1}>
+                {recipe.cookTime}
+              </Text>
             </View>
           )}
           {recipe.servings && (
             <View style={recipeCardStyles.servingsContainer}>
               <Ionicons
-                name="people-outline"
+                name="restaurant-outline"
                 size={14}
                 color={COLORS.textLight}
               />
-              <Text style={recipeCardStyles.servingsText}>
+              <Text style={recipeCardStyles.servingsText} numberOfLines={1}>
                 {recipe.servings}
               </Text>
             </View>

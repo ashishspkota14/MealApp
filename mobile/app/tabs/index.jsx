@@ -17,14 +17,12 @@ import CategoryFilter from "../../components/CategoryFilter";
 import RecipeCard from "../../components/RecipeCard";
 import LoadingSpinner from "../../components/LoadingSpinner";
 
-const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
 const HomeScreen = () => {
   const router = useRouter();
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const [recipes, setRecipes] = useState([]);
+  const [menuItems, setMenuItems] = useState([]);
   const [categories, setCategories] = useState([]);
-  const [featuredRecipe, setFeaturedRecipe] = useState(null);
+  const [featuredItem, setFeaturedItem] = useState(null);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
 
@@ -53,10 +51,10 @@ const HomeScreen = () => {
         .map((meal) => MealAPI.transformMealData(meal))
         .filter((meal) => meal !== null);
 
-      setRecipes(transformedMeals);
+      setMenuItems(transformedMeals);
 
       const transformedFeatured = MealAPI.transformMealData(featuredMeal);
-      setFeaturedRecipe(transformedFeatured);
+      setFeaturedItem(transformedFeatured);
     } catch (error) {
       console.log("Error loading the data", error);
     } finally {
@@ -70,10 +68,10 @@ const HomeScreen = () => {
       const transformedMeals = meals
         .map((meal) => MealAPI.transformMealData(meal))
         .filter((meal) => meal !== null);
-      setRecipes(transformedMeals);
+      setMenuItems(transformedMeals);
     } catch (error) {
       console.error("Error loading category data:", error);
-      setRecipes([]);
+      setMenuItems([]);
     }
   };
 
@@ -84,7 +82,6 @@ const HomeScreen = () => {
 
   const onRefresh = async () => {
     setRefreshing(true);
-    // await sleep(2000);
     await loadData();
     setRefreshing(false);
   };
@@ -94,7 +91,7 @@ const HomeScreen = () => {
   }, []);
 
   if (loading && !refreshing)
-    return <LoadingSpinner message="Loading delicions recipes..." />;
+    return <LoadingSpinner message="Loading menu..." />;
 
   return (
     <View style={homeStyles.container}>
@@ -109,24 +106,24 @@ const HomeScreen = () => {
         }
         contentContainerStyle={homeStyles.scrollContent}
       >
-        {/*  ANIMAL ICONS */}
+        {/* ANIMAL ICONS */}
         <View style={homeStyles.welcomeSection}>
           <Image
-            source={require("../../assets/images/lamb.png")}
+            source={require("../../assets/images/Bison.png")}
             style={{
               width: 100,
               height: 100,
             }}
           />
           <Image
-            source={require("../../assets/images/chicken.png")}
+            source={require("../../assets/images/Elk.png")}
             style={{
               width: 100,
               height: 100,
             }}
           />
           <Image
-            source={require("../../assets/images/pork.png")}
+            source={require("../../assets/images/Moose.png")}
             style={{
               width: 100,
               height: 100,
@@ -135,16 +132,16 @@ const HomeScreen = () => {
         </View>
 
         {/* FEATURED SECTION */}
-        {featuredRecipe && (
+        {featuredItem && (
           <View style={homeStyles.featuredSection}>
             <TouchableOpacity
               style={homeStyles.featuredCard}
               activeOpacity={0.9}
-              onPress={() => router.push(`/recipe/${featuredRecipe.id}`)}
+              onPress={() => router.push(`/recipe/${featuredItem.id}`)}
             >
               <View style={homeStyles.featuredImageContainer}>
                 <Image
-                  source={{ uri: featuredRecipe.image }}
+                  source={{ uri: featuredItem.image }}
                   style={homeStyles.featuredImage}
                   contentFit="cover"
                   transition={500}
@@ -156,7 +153,7 @@ const HomeScreen = () => {
 
                   <View style={homeStyles.featuredContent}>
                     <Text style={homeStyles.featuredTitle} numberOfLines={2}>
-                      {featuredRecipe.title}
+                      {featuredItem.title}
                     </Text>
 
                     <View style={homeStyles.featuredMeta}>
@@ -167,31 +164,19 @@ const HomeScreen = () => {
                           color={COLORS.white}
                         />
                         <Text style={homeStyles.metaText}>
-                          {featuredRecipe.cookTime}
+                          {featuredItem.cookTime}
                         </Text>
                       </View>
                       <View style={homeStyles.metaItem}>
                         <Ionicons
-                          name="people-outline"
+                          name="restaurant-outline"
                           size={16}
                           color={COLORS.white}
                         />
                         <Text style={homeStyles.metaText}>
-                          {featuredRecipe.servings}
+                          {featuredItem.servings}
                         </Text>
                       </View>
-                      {featuredRecipe.area && (
-                        <View style={homeStyles.metaItem}>
-                          <Ionicons
-                            name="location-outline"
-                            size={16}
-                            color={COLORS.white}
-                          />
-                          <Text style={homeStyles.metaText}>
-                            {featuredRecipe.area}
-                          </Text>
-                        </View>
-                      )}
                     </View>
                   </View>
                 </View>
@@ -213,16 +198,15 @@ const HomeScreen = () => {
             <Text style={homeStyles.sectionTitle}>{selectedCategory}</Text>
           </View>
 
-          {recipes.length > 0 ? (
+          {menuItems.length > 0 ? (
             <FlatList
-              data={recipes}
+              data={menuItems}
               renderItem={({ item }) => <RecipeCard recipe={item} />}
               keyExtractor={(item) => item.id.toString()}
               numColumns={2}
               columnWrapperStyle={homeStyles.row}
               contentContainerStyle={homeStyles.recipesGrid}
               scrollEnabled={false}
-              // ListEmptyComponent={}
             />
           ) : (
             <View style={homeStyles.emptyState}>
@@ -231,7 +215,7 @@ const HomeScreen = () => {
                 size={64}
                 color={COLORS.textLight}
               />
-              <Text style={homeStyles.emptyTitle}>No recipes found</Text>
+              <Text style={homeStyles.emptyTitle}>No items found</Text>
               <Text style={homeStyles.emptyDescription}>
                 Try a different category
               </Text>

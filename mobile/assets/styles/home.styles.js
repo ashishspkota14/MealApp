@@ -214,6 +214,7 @@ export const recipeCardStyles = StyleSheet.create({
   },
   content: {
     padding: 12,
+    minHeight: 100,
   },
   title: {
     fontSize: 15,
@@ -221,21 +222,27 @@ export const recipeCardStyles = StyleSheet.create({
     color: COLORS.text,
     marginBottom: 4,
     lineHeight: 20,
+    height: 40,
   },
   description: {
     fontSize: 12,
     color: COLORS.textLight,
     marginBottom: 8,
     lineHeight: 16,
+    height: 32,
   },
   footer: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    gap: 12,
+    minHeight: 20,
+    marginTop: 'auto',
   },
   timeContainer: {
     flexDirection: "row",
     alignItems: "center",
+    flex: 0,
   },
   timeText: {
     fontSize: 11,
@@ -246,6 +253,7 @@ export const recipeCardStyles = StyleSheet.create({
   servingsContainer: {
     flexDirection: "row",
     alignItems: "center",
+    flex: 0,
   },
   servingsText: {
     fontSize: 11,
